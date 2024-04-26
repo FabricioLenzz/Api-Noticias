@@ -2,16 +2,16 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Inicial from "../pages/Inicial";
 import Body from "../layout/Body";
 import Restaurante from "../pages/restaurante";
+import Produtos from "../pages/Produtos"
 
 export default function AppRoutes() {
   return (
-    <BrowserRouter> {/* responsável por englobar o app em navegação */}
-      <Routes> {/* responsável pelas rotas */}
+    <BrowserRouter> 
+      <Routes> 
         <Route path="/" element={<Body />}>
-          <Route path="/" element={<Inicial />} />
           <Route path="/" element={<Restaurante />} />
+          <Route path="/produtos" element={<Produtos />} />
 
-          
         </Route>
       </Routes>
     </BrowserRouter>

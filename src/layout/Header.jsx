@@ -1,6 +1,8 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (  
@@ -9,10 +11,9 @@ function Header() {
         <Navbar.Brand style={brandStyle}>Ádamo Restaurante</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav 
-
-          >
-            <Nav.Link href="#" style={headerStyle}>Produtos</Nav.Link>
+          <Nav>
+            
+            <Link to="/produtos" >Produtos</Link>
             <Nav.Link href="#" style={headerStyle}>Contato</Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/card';
-import Carousel from 'react-bootstrap/Carousel';
+
 
 
 function Restaurante() {
@@ -23,33 +23,6 @@ function Restaurante() {
         </div>
       </section>
 
-      <Carousel style={{minHeight: 410,     backgroundColor: '#ff4500',}
-
-    }>
-        <Carousel.Item interval={1000}>
-
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={500}>
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
 
       <section id="chefs">
         <h2 style={TituloStyle}>Chefs</h2>
@@ -94,8 +67,6 @@ function Restaurante() {
           </div>
         </div>
       </section>
-
-
 
       <section id="especialidades">
         <h2 style={TituloStyle}>Especialidades</h2>
@@ -146,25 +117,25 @@ function Restaurante() {
 
 
 const containerStyle = {
-  fontFamily: 'Arial, sans-serif',
+  fontFamily: 'Arial, sans-serif'
 };
 
 const TituloStyle = {
   borderBottom: '2px solid #333',
   paddingBottom: '0.5rem',
-  marginBottom: '1.5rem',
+  marginBottom: '1.5rem'
 };
 
 const cardapioStyle = {
   display: 'flex',
   justifyContent: 'center',
-  flexWrap: 'wrap',
+  flexWrap: 'wrap'
 };
 
 const menuItemStyle = {
   width: '300px',
   margin: '1rem',
-  textAlign: 'center',
+  textAlign: 'center'
 };
 
 const chefsStyle = {
@@ -177,31 +148,20 @@ const chefsStyle = {
 const chefstyle = {
   width: '300px',
   margin: '1rem',
-  textAlign: 'center',
+  textAlign: 'center'
 };
 
 const especialidadesStyle = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  flexWrap: 'wrap',
+  flexWrap: 'wrap'
 };
 
 const especialidadeItemStyle = {
   width: '300px',
   margin: '1rem',
-  textAlign: 'center',
-};
-
-const imgStyle = {
-  width: '100%',
-  borderRadius: '8px',
-};
-
-const chefImgStyle = {
-  width: '80%',
-  borderRadius: '50%',
-  margin: '0 auto',
+  textAlign: 'center'
 };
 
 

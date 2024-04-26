@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Inicial.css';
-import Restaurante from '../pages/restaurante'; // Importe a página que deseja renderizar
+
 
 
 export default function Inicial() {
@@ -17,7 +17,7 @@ export default function Inicial() {
           <button class="cinza">Secondary Acton</button>
         </div>
       </div>
-      <Restaurante /> {/* Renderize o componente Restaurante dentro do componente Inicial */}
+
     </div>
   );
 }

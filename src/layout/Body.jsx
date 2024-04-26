@@ -7,7 +7,9 @@ export default function Body() {
   return (
     <>
       <Header />
-      <Restaurante/>
+
+      <Outlet />
+
       <Footer />
     </>
   );
