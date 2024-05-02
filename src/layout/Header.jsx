@@ -8,13 +8,12 @@ function Header() {
   return (  
     <Navbar expand="lg" style={headerStyle}>
       <Container fluid>
-        <Navbar.Brand style={brandStyle}>Ádamo Restaurante</Navbar.Brand>
+        <Nav.Link href="/" style={headerStyle}>Ádamo Restaurante</Nav.Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav>
-            
-            <Link to="/produtos" >Produtos</Link>
-            <Nav.Link href="#" style={headerStyle}>Contato</Nav.Link>
+            <Nav.Link href="/produtos" style={headerStyle}>Produtos</Nav.Link>
+            <Nav.Link href="/Contatos" style={headerStyle}>Contato</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
