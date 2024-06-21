@@ -8,11 +8,11 @@ function Header() {
   return (  
     <Navbar expand="lg" style={headerStyle}>
       <Container fluid>
-        <Nav.Link href="/Noticias" style={headerStyle}>Central das Noticias</Nav.Link>
+        <Nav.Link href="/Noticias" style={headerStyle}>Central do meio ambiente</Nav.Link>
         
           <Navbar.Collapse id="navbarScroll">
           <Nav>
-            <Nav.Link href="/about" style={headerStyle}>About</Nav.Link>
+            <Nav.Link href="/about" style={headerStyle}>Sobre</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -22,7 +22,7 @@ function Header() {
  
  
 const headerStyle = {
-  color: '#f2f2f2',
+  color: 'black',
   marginRight: '1.5rem',
   backgroundColor: '#0dcaf0',
 };

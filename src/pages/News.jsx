@@ -7,10 +7,10 @@ const News = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=4f31f62a0ff4461bb0fe191ae45abec8');
+        const response = await fetch('https://dummyjson.com/posts');
         const data = await response.json();
         console.log(data); // Verifique os dados retornados
-        setNews(Array.isArray(data.articles) ? data.articles : []);
+        setNews(Array.isArray(data.posts) ? data.posts : []);
         setLoading(false);
       } catch (error) {
         console.error('Erro ao buscar as notícias:', error);
@@ -25,7 +25,7 @@ const News = () => {
   console.log(loading); // Verifique o estado atual de 'loading'
  
   if (loading) {
-    return <p style={loadStyle}>Carregando notícias...</p>;
+    return <p style={loadStyle}>Carregando notícias do meio ambiente...</p>;
   }
  
   return (
@@ -35,7 +35,7 @@ const News = () => {
         {news.map((article, index) => (
           <li key={index} style={itemStyle}>
             <h2 style={tituloNoticiaStyle}>{article.title}</h2>
-            <p style={descricaoStyle}>{article.description}</p>
+            <p style={descricaoStyle}>{article.body}</p>
             <a href={article.url} target="_blank" rel="noopener noreferrer" style={linkStyle}>Leia mais</a>
           </li>
         ))}

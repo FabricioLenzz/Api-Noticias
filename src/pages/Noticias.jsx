@@ -7,7 +7,7 @@ const HomePage = () => {
     <div style={containerStyle}>
       <h1 style={tituloStyle}>Bem-vindo à nossa Página Inicial!</h1>
       <Card style={cardStyle}>
-        <Card.Img variant="top" src={require("../img/noticias.png")} style={imgStyle} />
+        <Card.Img variant="top" src={require("../img/images.jpg")} style={imgStyle} />
       </Card>
       <p style={descricaoStyle}>Clique no botão abaixo para ver as últimas notícias:</p>
       <Link to="/news" style={botaoStyle}>Ver Notícias</Link>
@@ -35,7 +35,7 @@ const descricaoStyle = {
 const botaoStyle = {
   display: 'inline-block',
   padding: '0.5rem 1rem',
-  backgroundColor: '#0074D9',
+  backgroundColor: '#ADFF2F',
   color: '#FFF',
   textDecoration: 'none',
   borderRadius: '5px',
